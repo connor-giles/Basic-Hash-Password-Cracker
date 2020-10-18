@@ -45,8 +45,8 @@ def sha512_100times(passedInHash):
     #print('\n')
     return hash.hexdigest()
 
-file = open("wordlist5chars.txt", "r")
-hashToMatch = "00e2033898f86764dd93117e426b76930c5e8ffa3da7b1e095815a1686a011b991dace2783449273552e1c9dbfdbbd9c8aa9d3ecba73b06861fbd88def11e4f0"
+file = open("wordlists/wordlist_1_lower.txt", "r")
+hashToMatch = "26dc10ac450277126e64aca39c6e7f300f37b0b18693b49a3b648b801287e9a08f483ff9130e7157ccf2220047254130ebf4155f0e5e4248ef7a3eb528f69bb5"
 
 for i in range(pow(26,5)):
     passwordToTry = file.readline()
